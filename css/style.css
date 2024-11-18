@@ -1543,6 +1543,11 @@ ol {
 	margin-bottom: 30px;
 }
 
+.services__item__val{
+	margin-bottom: 10px;
+}
+
+
 .services__item h4 {
 	color: #111111;
 	text-transform: uppercase;
