@@ -1504,7 +1504,7 @@ ol {
 	position: absolute;
 	left: 50px;
 	top: 50px;
-	height: 530px;
+	height: 600px;
 	width: 470px;
 	border: 15px solid rgba(185, 175, 134, 0.2);
 	content: "";
@@ -2849,6 +2849,7 @@ ol {
 	}
 	.about__pic__inner {
 		display: block;
+		height: 530px;
 	}
 	.about__pic__inner img {
 		min-width: 100%;
