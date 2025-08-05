@@ -450,12 +450,12 @@ ol {
 }
 
 .hero__items {
-	height: 960px;
-	padding: 0 40px;
+	height: 100vh;
+	padding: 0px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	filter: brightness(0.8);
+	filter: brightness(0.7);
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -472,9 +472,9 @@ ol {
 .hero__text h2 {
 	color: #ffffff;
 	font-size: 40px;
-	line-height: 80px;
+	line-height: 50px;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 	position: relative;
 	top: 100px;
 	opacity: 0;
@@ -1468,7 +1468,7 @@ ol {
 
 .about img {
 	max-width: 90%;
-	height: 600px;
+
 }
 
 .about__text.about__page__text .section-title {
@@ -1498,6 +1498,8 @@ ol {
 .about__pic__inner {
 	position: relative;
 	display: inline-block;
+	margin-top: 70px;
+	text-align: center;
 }
 
 .about__pic__inner:after {
@@ -1545,6 +1547,7 @@ ol {
 
 .services__item__val{
 	margin-bottom: 10px;
+	padding: 0 20px;
 }
 
 
