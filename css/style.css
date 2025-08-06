@@ -529,7 +529,7 @@ ol {
   color: var(--accent-color);
 }
 .custom-video {
-	width: 100%;	
+	max-width: 100%;	
 }
 
 .cover-title {
