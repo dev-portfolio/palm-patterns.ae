@@ -323,6 +323,7 @@ ol {
 	display: inline-block;
 }
 
+
 .header__menu {
 	text-align: center;
 }
@@ -535,7 +536,7 @@ ol {
   color: var(--accent-color);
 }
 .custom-video {
-	max-width: 100%;	
+	width: 100%;	
 }
 
 .cover-title {
@@ -2678,6 +2679,22 @@ ol {
 	.header .light-bg {
 		background-color: #558d55a1
 	}
+	
+	.header img {
+		max-width: 32%;
+    }
+	
+	.hero .title-img {
+		max-width: 100%;
+	}
+	
+	.hero .text-capitalize {	
+		bottom: 10px;
+		right: 7.5%;
+		font-size: 16px;
+		position: absolute;
+	}
+
 	.hero__text h2 {
 		font-size: 34px;
 		line-height: 45px;
