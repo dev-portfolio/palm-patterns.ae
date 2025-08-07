@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+	<link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -36,7 +37,7 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__logo">
-            <a href="#"><img src="img/logo.jpeg" alt=""></a>
+            <a href="#"><img src="img/logo.png" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__widget">
@@ -49,25 +50,16 @@
     <!-- Header Section Begin -->
     <header class="header">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row green-bg">
+                <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="./index.html"	><img src="img/logo.jpeg" alt=""></a>
+                        <a href="./index.html"	><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="header__widget">
-                        <span>Call us for any questions</span>
-                        <h4>+971 56 699 5733</h4>
-                    </div>
-                </div>
-
-            </div>
-			<div class="row justify-content-center">
-					<div class="col-lg-8 light-bg p-4">
+			
+					<div class="col-lg-8  p-4">
 						<nav class="header__menu mobile-menu">
-							<ul class="d-lg-flex justify-content-around">
+							<ul class="d-lg-flex" style="justify-content: space-evenly">
 								<li class="active"><a href="./index.html">Home</a></li>
 								<li><a href="./about.html">About</a></li>
 								<li><a href="#services">Services</a></li>
@@ -76,7 +68,16 @@
 							</ul>
 						</nav>
 					</div>
-				</div>
+				
+                <div class="col-lg-2 d-flex justify-content-end align-items-center">
+                    <div class="header__widget">
+                        <span>Call us for any questions</span>
+                        <h4>+971 56 699 5733</h4>
+                    </div>
+                </div>
+
+            </div>
+
 			
             <div class="canvas__open"><i class="fa fa-bars"></i></div>
         </div>
@@ -87,13 +88,16 @@
     <section class="hero">
 		<div class="video-wrap">
 			<video autoplay="" loop="" muted="" class="custom-video" poster="">
-			<source src="img/cover.MP4" type="video/mp4">
+			<source src="img/cover.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 			</video>
 		</div>
-		<div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
-			<img class="cover-title" src="img/logo.png" alt="">
-			<a href="#about" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a>
+		<div class="container mt-5" >
+			<div class="container text-center" data-aos="fade-up" data-aos-delay="500">
+					<!-- <h1 class="title-color">PALM <span class="title-color">&</span> PATTERNS</h1> -->
+					<img class="title-img" src="img/logo.png" alt="" data-aos="fade-up" data-aos-delay="100">
+					<p class="text-capitalize" data-aos="fade-left" data-aos-delay="700">Bringing Your Imaginations In Reality</p>
+				</div>
 		</div>
         
     </section>
@@ -114,10 +118,6 @@
 							our passionate team of architects and designers is dedicated to creating environments that are not only visually stunning
 							but also functional and tailored to your unique needs. 
 							</p>
-							<p>
-							We take a holistic approach to design, merging aesthetics with practicality.
-							Our diverse portfolio includes residential, commercial, and hospitality projects, each reflecting our clients' individuality and lifestyle.
-							</p>
 							
                             <p>	At Palm & Patterns, it’s all about creating spaces where memories are made and lives are enriched. 
 							Join us on this journey, and let’s turn your vision into reality.</p>
@@ -125,7 +125,7 @@
                         <a href="#" class="primary-btn normal-btn">Learn More</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex align-items-center">
                     <div class="about__pic">
                         <div class="about__pic__inner">
                             <img src="img/about-pic.jpg" alt="">
@@ -154,7 +154,6 @@
                         <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new1.jpg">
                             <div class="project__slider__item__hover">
                                 <span>Interiors</span>
-                                <h5>Villa K09</h5>
                             </div>
                         </div>
                     </div>
@@ -162,15 +161,13 @@
                         <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new.jpg">
                             <div class="project__slider__item__hover">
                                 <span>Interiors</span>
-                                <h5>Al Barari Dubai</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new2.jpg">
                             <div class="project__slider__item__hover">
-                                <span>Interiors</span>
-                                <h5>JGE Dubai</h5>
+                                <span>Exteriors</span>
                             </div>
                         </div>
                     </div>
@@ -178,8 +175,21 @@
                     <div class="col-lg-3">
                         <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new3.jpg">
                             <div class="project__slider__item__hover">
-                                <span>Interiors</span>
-                                <h5>Villa Al Barari Dubai</h5>
+                                <span>Landscaping</span>
+                            </div>
+                        </div>
+                    </div>
+					  <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new4.jpg">
+                            <div class="project__slider__item__hover">
+                                <span>Landscaping</span>
+                            </div>
+                        </div>
+                    </div>
+					  <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new.jpg">
+                            <div class="project__slider__item__hover">
+                                <span>Exteriors</span>
                             </div>
                         </div>
                     </div>
@@ -202,7 +212,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row services-bg">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="services__item">
                         <img src="img/services/services-1.png" alt="">
@@ -672,6 +682,7 @@
 <!-- Js Plugins -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/slick.min.js"></script>
