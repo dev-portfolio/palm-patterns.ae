@@ -50,7 +50,7 @@ h5,
 h6 {
 	margin: 0;
 	color: #111111;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 h1 {
@@ -395,7 +395,7 @@ ol {
 
 .header__menu ul li a {
 	font-size: 16px;
-	color: white;
+	color: #d2bd73;
 	display: block;
 	font-weight: 500;
 	padding: 5px 0;
@@ -424,16 +424,15 @@ ol {
 
 .header__widget span {
 	font-size: 14px;
-	font-family: "Aldrich", sans-serif;
 	color: #d9bb7b;
+	text-align: center;
 	display: block;
 	margin-bottom: 10px;
 }
 
 .header__widget h4 {
 	font-size: 22px;
-	margin-right: 20px;
-	color: white;
+	color: #8eff88;
 }
 
 .offcanvas-menu-wrapper {
@@ -535,7 +534,8 @@ ol {
   color: var(--accent-color);
 }
 .custom-video {
-	width: 100%;	
+	object-fit: cover;
+	max-width: 100%;	
 }
 
 .cover-title {
@@ -545,8 +545,7 @@ ol {
 
 @media (max-width: 480px) {
     .custom-video {
-        width: auto !important;
-        height: 100vh;
+		max-width: fit-content;
     }
 	.hero {
 	  padding: 0;
@@ -566,8 +565,7 @@ ol {
 
 @media (max-width: 767x) {
     .custom-video {
-        width: auto !important;
-        height: 100vh;
+		max-width: fit-content;
     }
 	
 	.hero {
@@ -1015,6 +1013,7 @@ ol {
 .callto {
 	padding-top: 130px;
 	padding-bottom: 135px;
+	background-attachment: fixed;
 }
 
 .callto__text span {
@@ -1262,7 +1261,6 @@ ol {
 .footer__widget h6 {
 	color: #ffffff;
 	font-weight: 600;
-	font-family: "Poppins", sans-serif;
 	margin-bottom: 30px;
 }
 
@@ -1443,6 +1441,10 @@ ol {
 	text-align: center;
 }
 
+.about__pic__inner img {
+	border-radius: 20px;
+}
+
 /* .about__pic__inner:after { */
 	/* position: absolute; */
 	/* left: 50px; */
@@ -1512,6 +1514,7 @@ ol {
 
 .services__item img {
 	background-color: #FFEB3B;
+	border-radius: 10px;
 }
 /*---------------------
   Counter
@@ -2681,8 +2684,7 @@ ol {
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 480px) {
     .custom-video {
-        width: auto !important;
-        height: 100vh;
+		max-width: fit-content;
     }
 	.hero {
 	  padding: 0;
