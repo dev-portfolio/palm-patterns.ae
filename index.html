@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Staging Template">
-    <meta name="keywords" content="Staging, unica, creative, html">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" href="img/title.png">
@@ -13,7 +13,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
@@ -48,8 +48,8 @@
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container-fluid">
+    <header id="header" class="header">
+        <div class="container-fluid position-relative">
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo mt-3 mt-lg-0">
@@ -57,8 +57,8 @@
                     </div>
                 </div>
 			
-				<nav class="col-lg-8 p-4 header__menu mobile-menu">
-					<ul class="d-lg-flex" style="justify-content: space-evenly">
+				<nav class="col-lg-8 d-lg-flex header__menu mobile-menu">
+					<ul class="w-100 d-flex" style="justify-content: space-evenly">
 						<li class="active"><a href="./index.html">Home</a></li>
 						<li><a href="./about.html">About</a></li>
 						<li><a href="./services.html">Services</a></li>
@@ -137,7 +137,10 @@
                 <div class="col-lg-6 d-flex align-items-center">
                     <div class="about__pic">
                         <div class="about__pic__inner">
-                            <img src="img/about-pic.jpg" alt="">
+                           <video playsinline autoplay loop muted class="about-custom-video">
+								<source src="img/ABOUT.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
                         </div>
                     </div>
                 </div>
@@ -160,21 +163,21 @@
             <div class="row">
                 <div class="project__slider owl-carousel">
                     <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new1.jpg">
+                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/0.jpg">
                             <div class="project__slider__item__hover">
                                 <span>Interiors</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new.jpg">
+                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/1.jpg">
                             <div class="project__slider__item__hover">
                                 <span>Interiors</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new2.jpg">
+                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/2.jpg">
                             <div class="project__slider__item__hover">
                                 <span>Exteriors</span>
                             </div>
@@ -182,21 +185,21 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new3.jpg">
+                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/3.jpg">
                             <div class="project__slider__item__hover">
                                 <span>Landscaping</span>
                             </div>
                         </div>
                     </div>
 					  <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new4.jpg">
+                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/4.jpg">
                             <div class="project__slider__item__hover">
                                 <span>Landscaping</span>
                             </div>
                         </div>
                     </div>
 					  <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/new.jpg">
+                        <div class="project__slider__item set-bg" data-setbg="img/renders/latest/5.jpg">
                             <div class="project__slider__item__hover">
                                 <span>Exteriors</span>
                             </div>
@@ -204,6 +207,9 @@
                     </div>
                 </div>
             </div>
+			<div class="text-center mt-5">
+				<a href="" class="explore-btn">Explore More</a>
+			</div>
         </div>
     </section>
     <!-- Project Section End -->
@@ -222,34 +228,84 @@
                 </div>
             </div>
             <div class="row services-bg mt-lg-5">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <img src="img/services/services-1.png" alt="">
-                        <h4 class="mt-5">LUXURY INTERIOR DESIGN</h4>
-                        <p>Our luxury interior design blends aesthetics, functionality, and personalization to transform grand residences and prestigious spaces into refined havens of elegance</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <img src="img/services/services-2.png" alt="">
-                        <h4>HOME INTERIOR DESIGN</h4>
-                        <p>We are a top interior design company, crafting beautiful, functional homes that reflect our clients' unique tastes and enhance and ambiance.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <img src="img/services/services-3.png" alt="">
-                        <h4>INTERIOR FITOUT WORKS</h4>
-                        <p>We offer top-quality interior fit-out services, transforming spaces into stunning, luxury and functional environments with exceptional craftsmanship.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <img src="img/services/services-4.png" alt="">
-                        <h4>HOME RENOVATION WORKS</h4>
-                        <p>We provide exceptional home renovation services, turning your space into a stunning, functional environment that reflects your unique style and needs.</p>
-                    </div>
-                </div>
+				 
+				 <div class="col-lg-12 col-md-12 col-sm-12 services__item">
+					<div class="col-lg-6 col-md-6 col-sm-12 services__desc">
+						<h4 class="mt-5">Ornamentation  &  Engraving</h4>
+						<p class="pr-lg-5"> We create intricate ornamental and engraved designs that elevate interiors and exteriors alike.</p>
+						<p </p>">From classical motifs to modern patterns, our skilled artisans bring detail and character to walls, ceilings, and decorative elements.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img src="img/services/services-1.jpg" alt="">
+					</div>
+				 </div>
+				 
+				 <div class="col-lg-12 col-md-12 col-sm-12 services__item">
+					<div class="col-lg-6 col-md-6 col-sm-12 pr-lg-5">
+						<img src="img/services/services-2.jpg" alt="">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 services__desc">
+						<h4 class="mt-5">Professional Painting Services</h4>
+						<p>Our expert painting services deliver flawless finishes with premium materials and techniques. </p>
+						<p> Whether it’s residential, commercial, or industrial projects, we ensure vibrant, long-lasting colors and smooth textures that transform walls and ceilings into works of art.</p>
+					</div>
+				 </div>
+				 
+				 <div class="col-lg-12 col-md-12 col-sm-12 services__item">
+					<div class="col-lg-6 col-md-6 col-sm-12 services__desc">
+						<h4 class="mt-5">Wall & Floor Tiling</h4>
+						<p class="pr-lg-5">With precision installation of ceramic, porcelain, marble, and stone tiles, we enhance spaces with both durability and style. </p>
+						<p class="pr-lg-5">Our team provides custom tiling designs for walls and floors that combine practicality with aesthetic appeal.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img src="img/services/services-3.jpg" alt="">
+					</div>
+				 </div>
+				 
+				 <div class="col-lg-12 col-md-12 col-sm-12 services__item">
+					<div class="col-lg-6 col-md-6 col-sm-12 pr-lg-5">
+						<img src="img/services/services-4.jpg" alt="">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 services__desc">
+						<h4 class="mt-5">Wood Flooring & Carpentry</h4>
+						<p>We offer tailored wooden flooring and carpentry solutions, blending modern design with traditional craftsmanship.</p>
+						<p>From hardwood flooring to custom furniture and joinery, our works bring warmth, elegance, and functionality to your interiors.</p>
+					</div>
+				 </div>
+				 
+				 <div class="col-lg-12 col-md-12 col-sm-12 services__item">
+					<div class="col-lg-6 col-md-6 col-sm-12 services__desc">
+						<h4 class="mt-5">Interior Design &</br> Décor Implementation</h4>
+						<p class="pr-lg-5">Our decoration services go beyond styling – we create unique design concepts and bring them to life with turnkey execution. </p>
+						<p class="pr-lg-5">From conceptual planning to finishing touches, we ensure every detail reflects your personality and vision.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img src="img/services/services-5.jpg" alt="">
+					</div>
+				 </div>
+				 
+				 <div class="col-lg-12 col-md-12 col-sm-12 services__item">
+					<div class="col-lg-6 col-md-6 col-sm-12 pr-lg-5">
+						<img src="img/services/services-6.jpg" alt="">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 services__desc">
+						<h4 class="mt-5">Swimming Pool Installation</h4>
+						<p>We provide end-to-end swimming pool solutions, including design, construction, tiling, and finishing. </p>
+						<p>Whether modern, luxurious, or classic, our pools are built to complement your lifestyle with durability and style.</p>
+					</div>
+				 </div>
+				 
+				 <div class="col-lg-12 col-md-12 col-sm-12 services__item">
+					<div class="col-lg-6 col-md-6 col-sm-12 services__desc">
+						<h4 class="mt-5">Wallpaper Installation</h4>
+						<p class="pr-lg-5">Offering a wide range of premium wallpaper collections, we ensure flawless installation that adds depth, texture, and sophistication to your interiors. </p>
+						<p class="pr-lg-5">Our designs range from modern minimalism to classic elegance, tailored to suit every taste.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img src="img/services/services-7.jpg" alt="">
+					</div>
+				 </div>
+                
             </div>
 		
 	    <div class="row pt-5 mt-lg-5">
@@ -597,7 +653,7 @@
     <!-- Latest Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer set-bg">
+    <footer class="footer">
         <div class="container">
             <div class="footer__top">
                 <div class="row">
@@ -608,8 +664,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="footer__top__newslatter">
-                            <form action="#">
-                                <input type="text" placeholder="Enter your email...">
+                            <form action="">
+                                <input type="email" placeholder="Enter your email...">
                                 <button type="submit"><i class="fa fa-send"></i></button>
                             </form>
                         </div>
@@ -669,13 +725,18 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-7">
                         <div class="copyright__text">
-                            <p>Copyright © <script>
-                                document.write(new Date().getFullYear());
+                            <p>Copyright © <span id="copy-right"> <script>
+							document.getElementById('copy-right').innerHTML = new Date().getFullYear();
+                                
                             </script> All rights reserved <i class="fa fa-heart-o"
                             aria-hidden="true"></i> by <a href="#"
                             target="_blank">Palm & Patterns</a>
-                        </p>
+                        </span>
+						</p>
                     </div>
+					<script>
+							
+					</script>
                 </div>
                 <div class="col-lg-4 col-md-5">
                     <div class="copyright__widget">
@@ -688,7 +749,9 @@
     </div>
 </footer><!-- Footer Section End -->
 
+
 <!-- Js Plugins -->
+
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/aos.js"></script>
