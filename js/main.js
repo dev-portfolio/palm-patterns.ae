@@ -17,32 +17,18 @@
     $(window).on('load', function () {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
-		AOS.init({
-		  duration: 600,
-		  easing: 'ease-in-out',
-		  once: true,
-		  mirror: false
-		});
     });
-  function toggleScrolled() {
-    const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+  
+
+  function aosInit() {
+    AOS.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
   }
-
-  document.addEventListener('scroll', toggleScrolled);
-  window.addEventListener('load', toggleScrolled);
-
-  // function aosInit() {
-    // AOS.init({
-      // duration: 600,
-      // easing: 'ease-in-out',
-      // once: true,
-      // mirror: false
-    // });
-  // }
-  // window.addEventListener('load', aosInit);
+  window.addEventListener('load', aosInit);
     /*------------------
         Background Set
     --------------------*/
