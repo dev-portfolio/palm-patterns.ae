@@ -33,13 +33,13 @@
 
 html,
 body {
-	height: 100%;
 	font-family: "Marcellus", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
-	background: url(../img/footer-bg.jpg);
-	background-size: cover;
-	background-position: top;
+	background: url(../img/bg-01.jpg);
+	background-size: 100% 100%;
+	background-position: bottom ;
+	background-repeat: no-repeat
 }
 
 h1,
@@ -49,7 +49,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	color: #111111;
+	color: #c3c3c3;
 	font-weight: 600;
 }
 
@@ -80,7 +80,7 @@ h6 {
 p {
 	font-size: 15px;
 	font-family: "Poppins", sans-serif;
-	color: #707070;
+	color: #c3c3c3;
 	font-weight: 400;
 	line-height: 26px;
 	margin: 0 0 15px 0;
@@ -156,7 +156,7 @@ ol {
 .text-white span,
 .text-white li,
 .text-white a {
-	color: #fff;
+	color: #c3c3c3;
 }
 
 /* buttons */
@@ -311,11 +311,10 @@ ol {
 -----------------------*/
 
 .header {
-	position: sticky;
-	 --background-color: #90909059;
-	 background-color: var(--background-color);
+	background-color: #90909059;
    transition: all 0.5s;
-	z-index: 997;
+	position: fixed;
+	    z-index: 1;
 }
 
 .header .green-bg{ 
@@ -397,7 +396,7 @@ ol {
 
 .header__menu ul li .dropdown li a {
 	font-size: 14px;
-	color: #111111;
+	color: #dfa667;
 	font-weight: 400;
 	padding: 5px 20px;
 	text-transform: capitalize;
@@ -409,7 +408,7 @@ ol {
 
 .header__menu ul li a {
 	font-size: 16px;
-	color: #d2bd73;
+	color: #dfa667;
 	display: block;
 	font-weight: 800;
 	padding: 5px 0;
@@ -484,13 +483,6 @@ ol {
   justify-content: center;
 }
 
-.hero:before {
-  content: "";
-  /* background: color-mix(in srgb, var(--background-color), transparent 30%); */
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
 
 
 .hero .title-img {
@@ -572,7 +564,7 @@ ol {
 .custom-video {
 	object-fit: cover;
 	width: 100%;
-	opacity: 0.8;
+	
 }
 
 .cover-title {
@@ -917,6 +909,10 @@ ol {
 	align-items: center;
 }
 
+.project .owl-carousel {
+	z-index: 0 !important;
+}
+
 /*---------------------
   Team
 -----------------------*/
@@ -1033,7 +1029,7 @@ ol {
 .team__text .team__social a {
 	display: inline-block;
 	font-size: 20px;
-	color: #ffffff;
+	color: #c3c3c3;
 	margin-right: 34px;
 	-webkit-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
@@ -1126,7 +1122,7 @@ ol {
 }
 
 .project__item h4 a {
-	color: #111111;
+	color: #c3c3c3;
 	text-transform: uppercase;
 }
 
@@ -1281,7 +1277,7 @@ ol {
 
 .footer__about .footer__social a {
 	font-size: 18px;
-	color: #ffffff;
+	color: #c3c3c3;
 	-webkit-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
@@ -1312,7 +1308,7 @@ ol {
 
 .footer__widget ul li a {
 	font-size: 15px;
-	color: #707070;
+	color: #c3c3c3;
 	line-height: 36px;
 }
 
@@ -1335,7 +1331,7 @@ ol {
 	font-size: 15px;
 	list-style: none;
 	line-height: 26px;
-	color: #707070;
+	color: #c3c3c3;
 }
 
 .copyright {
@@ -1353,7 +1349,7 @@ ol {
 }
 
 .copyright__text p a {
-	color: #ffffff;
+	color: #c3c3c3;
 }
 
 .copyright__widget {
@@ -1362,7 +1358,7 @@ ol {
 
 .copyright__widget a {
 	font-size: 14px;
-	color: #707070;
+	color:#c3c3c3;
 	margin-right: 36px;
 	position: relative;
 }
@@ -1405,7 +1401,7 @@ ol {
 
 .breadcrumb__links a {
 	font-size: 15px;
-	color: #ffffff;
+	color: #c3c3c3;
 	display: inline-block;
 	position: relative;
 	margin-right: 12px;
@@ -1713,7 +1709,7 @@ ol {
 
 .blog__item__text a {
 	font-size: 14px;
-	color: #111111;
+	color: #c3c3c3;
 	font-weight: 600;
 	position: relative;
 	padding-left: 40px;
@@ -1777,7 +1773,7 @@ ol {
 
 .blog__pagination a {
 	font-size: 15px;
-	color: #111111;
+	color:#c3c3c3;
 	font-weight: 600;
 	display: inline-block;
 	height: 40px;
@@ -1953,7 +1949,7 @@ ol {
 .blog__sidebar__tag a {
 	display: inline-block;
 	font-size: 13px;
-	color: #b7b7b7;
+	color: #c3c3c3;
 	letter-spacing: 1px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -2000,7 +1996,7 @@ ol {
 	height: 34px;
 	width: 34px;
 	font-size: 18px;
-	color: #707070;
+	color:#c3c3c3;
 	line-height: 34px;
 	text-align: center;
 	border: 1px solid transparent;
@@ -2699,7 +2695,7 @@ ol {
 	.slicknav_nav a {
 		padding: 7px 0;
 		margin: 0;
-		color: #ffffff;
+		color: #c3c3c3;
 		font-weight: 600;
 	}
 	.slicknav_nav .slicknav_arrow {
@@ -2918,7 +2914,7 @@ ol {
 	.slicknav_nav a {
 		padding: 7px 0;
 		margin: 0;
-		color: #ffffff;
+		color: #c3c3c3;
 		font-weight: 600;
 	}
 	.slicknav_nav .slicknav_arrow {
