@@ -1533,6 +1533,7 @@ ol {
 .services__item {
 	margin-bottom: 80px;
 	display:flex;
+	flex-direction: row;
 }
 
 .services__desc {
@@ -2797,6 +2798,10 @@ ol {
 		background-color: #558d55a1
 	}
 	
+	.reverse {
+		flex-direction: column-reverse !important;
+	}
+	
 	.header img {
 		max-width: 32%;
     }
@@ -2855,7 +2860,7 @@ ol {
 		cursor: pointer;
 		position: absolute;
 		right: 15px;
-		top: 34px;
+		top: 26px;
 	}
 	.offcanvas-menu-overlay {
 		position: fixed;
@@ -2909,6 +2914,7 @@ ol {
 	}
 	.slicknav_nav ul {
 		margin: 0;
+		flex-direction: column;
 	}
 	.slicknav_nav .slicknav_row,
 	.slicknav_nav a {
