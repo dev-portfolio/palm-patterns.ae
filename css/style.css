@@ -1099,7 +1099,6 @@ ol {
 .approach img {
 	border: 1px transparent;
     border-radius: 15px;
-	padding: 35px;
 }
 
 .approach p {
@@ -1383,8 +1382,8 @@ ol {
 -----------------------*/
 
 .breadcrumb-option {
-	padding-top: 170px;
-	padding-bottom: 120px;
+	/* padding-top: 170px; */
+	/* padding-bottom: 120px; */
 }
 
 .breadcrumb__text {
@@ -1485,6 +1484,10 @@ ol {
 
 .about-custom-video {
 	   width: 100%;
+}
+
+.custom-video-arch {
+	width: 100%;
 }
 
 /* .about__pic__inner:after { */
